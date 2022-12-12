@@ -14,7 +14,7 @@ int main(void)
 
 	for (i = 97; i < 223; i++)
 		putchar(i);
-	putchar(20);
+	putchar(10);
 
 	return (0);
 }
