@@ -12,9 +12,9 @@ int main(void)
 {
 	int i;
 
-	for (i = 97; i < 223; i++)
+	for (i = 97; i < 123; i++)
 		putchar(i);
-	putchar(10);
+	putchar(26);
 
 	return (0);
 }
