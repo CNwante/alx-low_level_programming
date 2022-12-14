@@ -1,0 +1,1 @@
+This directory contains all the tasks for the "0x02. C - Functions, nested loops" project.
