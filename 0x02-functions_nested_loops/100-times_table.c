@@ -2,44 +2,49 @@
 
 /**
  * print_times_table - Outputs Times Table.
- * @n: The number of the times table starting with 0
+ * @n: int type parameter.
+ *
+ * Description: Outputs the times table starting with 0
+ * where num1 and num2 = multiplication numbers, pro = product.
+ *
+ * Return: Times Table.
  */
 
 void print_times_table(int n)
 {
-	int i, j, k;
+	int num1, num2, pro;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (i = 0; i <= n; i++)
+		for (num1 = 0; num1 <= n; num1++)
 		{
-			for (j = 0; j <= n; j++)
+			for (num2 = 0; num2 <= n; num2++)
 			{
-				k = j * i;
-				if (j == 0)
+				pro = num1 * num2;
+				if (num2 == 0)
 				{
-					_putchar(k + '0');
-				} else if (k < 10 && j != 0)
-				{
-					_putchar(',');
-					_putchar(',');
-					_putchar(',');
-					_putchar(',');
-					_putchar(k + '0');
-				} else if (k >= 10 && k < 100)
+					_putchar(pro + '0');
+				} else if (pro < 10 && num2 != 0)
 				{
 					_putchar(',');
-					_putchar(',');
-					_putchar(',');
-					_putchar((k / 10) + '0');
-					_putchar((k % 10) + '0');
-				} else if (k >= 100)
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(pro + '0');
+				} else if (pro >= 10 && pro < 100)
 				{
 					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar((pro / 10) + '0');
+					_putchar((pro % 10) + '0');
+				} else if (pro >= 100)
+				{
 					_putchar(',');
-					_putchar((k / 100) + '0');
-					_putchar(((k / 10) % 10) + '0');
-					_putchar((k % 10) + '0');
+					_putchar(' ');
+					_putchar((pro / 100) + '0');
+					_putchar(((pro / 10) % 10) + '0');
+					_putchar((pro % 10) + '0');
 				}
 			}
 			_putchar('\n');
