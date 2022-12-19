@@ -2,7 +2,6 @@
 
 /**
  * int _isupper(int c) - Checks for uppercase character
- *
  * @c: int data type parameter
  *
  * Return: 1 if c is uppercase,
