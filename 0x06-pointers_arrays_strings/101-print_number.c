@@ -25,10 +25,11 @@ void print_number(int n)
 	j = i;
 	count = 1;
 
-	do {
+	while (j > 9)
+	{
 		j /= 10;
 		count *= 10;
-	} while (j > 9);
+	}
 
 	for (; count >= 1; count /= 10)
 	{
