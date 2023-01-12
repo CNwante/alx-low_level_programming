@@ -21,6 +21,14 @@ char *_strdup(char *str)
 		;
 	str_dup = (char *)malloc(sizeof(char) * (i + 1));
 
+	str_dup = malloc(INT_MAX);
+
+	if (str_dup = NULL)
+	{
+		printf("Can't allocate %d bytes (after %d calls)\n", INT_MAX, i);
+		return (1);
+	}
+
 	for (j = 0; j <= i; j++)
 		str_dup[j] = str[j];
 
