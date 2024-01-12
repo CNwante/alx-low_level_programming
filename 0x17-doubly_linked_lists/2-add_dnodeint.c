@@ -16,10 +16,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	dlistint_t *newNode = malloc(sizeof(*newNode));
 
 	if (newNode == NULL)
-	{
-		dprintf(2, "Error: Can't malloc\n");
 		return (NULL);
-	}
 
 	newNode->n = n;
 	newNode->prev = NULL;
