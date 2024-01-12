@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
 
@@ -19,7 +18,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	if (newNode == NULL)
 	{
 		dprintf(2, "Error: Can't malloc\n");
-		return (EXIT_FAILURE);
+		return (NULL);
 	}
 
 	newNode->n = n;
